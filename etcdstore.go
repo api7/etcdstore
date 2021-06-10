@@ -3,19 +3,13 @@ package etcdstore
 import (
 	"context"
 	"encoding/base32"
-	"errors"
 	"fmt"
-	"go.etcd.io/etcd/clientv3"
 	"net/http"
 	"strings"
 
 	"github.com/gorilla/securecookie"
 	"github.com/gorilla/sessions"
-)
-
-var (
-	ErrNilClient   = errors.New("etcd client is nil")
-	ErrKeyNotFound = errors.New("key not found in etcd")
+	"go.etcd.io/etcd/clientv3"
 )
 
 // EtcdStore stores sessions in a etcd backend.

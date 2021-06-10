@@ -152,6 +152,7 @@ func (s *EtcdStore) Save(_ *http.Request, w http.ResponseWriter, session *sessio
 		}
 
 		http.SetCookie(w, sessions.NewCookie(session.Name(), "", session.Options))
+		return nil
 	}
 
 	if session.ID == "" {

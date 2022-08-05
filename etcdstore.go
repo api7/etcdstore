@@ -9,7 +9,7 @@ import (
 
 	"github.com/gorilla/securecookie"
 	"github.com/gorilla/sessions"
-	"go.etcd.io/etcd/clientv3"
+	"go.etcd.io/etcd/client/v3"
 )
 
 // EtcdStore stores sessions in a etcd backend.

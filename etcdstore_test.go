@@ -2,11 +2,12 @@ package etcdstore
 
 import (
 	"context"
-	"github.com/stretchr/testify/assert"
-	"go.etcd.io/etcd/clientv3"
 	"net/http"
 	"net/http/httptest"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
+	"go.etcd.io/etcd/client/v3"
 )
 
 const (
